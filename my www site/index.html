@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <!--sekcja 1-->
+        <section id="hero" class="section hero-section">
+            <div class="container">
+                <header class="header">
+                    <nav>
+                        <ul class="menu" id="main-menu">
+                            <li>O mnie </li>
+                            <li>Zainteresowania</li>
+                            <li>Zdjęcia</li>
+                            <li>Kontakt</li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+
+            <div class="hero-content">
+                <h1 class="hero-title">Hej!</h1>
+                <p class="hero-lead"> Mam na imię Marta. Fascynuje mnie technologia, programowanie i piękne miejsca w Europie!</p>
+            </div>
+        </section>
+
+        <!--II sekcja-->
+        <section id="about" class="section about-section">
+        <div class="container">
+            <div class="columns-container columns-2-container">    
+                    <div class="column about-image">
+                        <img src="zdjecia/mod3.jpg" alt="foto o mnie">
+                    </div>
+
+                    <div class="column about-text">
+                        <h2 class="section-title">O mnie</h2>
+                        <p><strong>Jestem Marta</strong></p>
+                        <p>Mam 17 lat, interesuję się programowaniem, designem, architekturą.</p>
+                        <p>Fascynują mnie również podróże i uwielbiam zwiedzać Europę.</p>
+                        <p>W wolnym czasie lubię pływać, spacerować i czytać ciekawe artykuły.</p>
+                    </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- III sekcja-->
+        <section id="interests" class="section section-violet interests-section">
+            <!--<div class="container">-->
+                <div class="columns-container columns-4-container">  
+                    <div class="column">
+                        <h3 class="interest-name">Programowanie Stron WWW</h3>
+                        <p class="interest-text">To super uczucie zrobić coś działającego od zera!</p>
+                    </div>
+                    <div class="column">
+                        <h3 class="interest-name">Design i Architektura</h3>
+                        <p class="interest-text">Uwielbiam oglądać ciekawą architekturę i klimatyczne wnętrza, a obcowanie z designem pozwala na rozwój mojego poczucia estetyki.</p>
+                    </div>
+                    <div class="column">
+                        <h3 class="interest-name">Podróżowanie</h3>
+                        <p class="interest-text"> W Europie jest mnóstwo pięknych miejsc, które chciałaym zobaczyć, a chwile w których miałam okazję zwiedzać niektóre z nich, sprawiły mi wielką radość :D</p>
+                    </div>
+                    <div class="column">
+                        <h3 class="interest-name">Sztuczna Inteligencja</h3>
+                        <p class="interest-text">Jest to fascynująca dziedzina o wielu zastosowaniach i mimo, że wiem o niej mało to w wolnych chwilach zgłębiam jej tajniki!</p>
+                    </div>
+                </div> 
+              
+        </section>
+
+        <!-- IV sekcja zdjecia-->
+        <section id="photos" class="section photos-section">
+            <div class="container">
+                <h2 class="photos-title">Zdjęcia</h2>
+                <p class="photos-lead">Poniżej znajdziesz fotografie</p>
+                <div class="columns-container columns-3-container">
+                    <div class="column">
+                        <figure>
+                            <img src="zdjecia/ai.jpg" alt="AI">
+                            <figurecaption>Foto autorstwa <strong>Tranmautritam</strong> ze strony <strong>pexels</strong></figurecaption>
+                        </figure>
+                    </div>
+                   
+                    <div class="column"> 
+                        <figure>
+                            <img src="zdjecia/krivec-ales.jpg" alt="europa">
+                            <figurecaption>Foto autorstwa <strong>Krivec Ales</strong> ze strony <strong>pexels</strong></figurecaption>
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure>
+                            <img src="zdjecia/www-site.jpg" alt="AI">
+                            <figurecaption>Foto autorstwa <strong>Tranmautritam</strong> ze strony <strong>pexels</strong></figurecaption>
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure>
+                            <img src="zdjecia/pexels-design2.jpg" alt="design">
+                            <figurecaption>Foto autorstwa <strong>Rahul</strong> ze strony <strong>pexels</strong></figurecaption>
+                        </figure>
+                    </div>
+                    <div class="column"> 
+                        <figure>
+                            <img src="zdjecia/pexels-europa.jpg" alt="europa">
+                            <figurecaption>Foto autorstwa <strong>Peter Fazekas</strong> ze strony <strong>pexels</strong></figurecaption>
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure>
+                            <img src="zdjecia/pexels-design3.jpg" alt="design">
+                            <figurecaption>Foto autorstwa <strong>Kaboompics .com</strong> ze strony <strong>pexels</strong></figurecaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--sekcja z cytatem-->
+        <section id="quote" class="section quote-section section-pink">
+            <div clas="container">
+                <h2> Głęboki Cytat</h2>
+                <p class="quote-text">"Życia nie mierzy się ilością oddechów, ale ilością zapierających dech chwil. "</p>
+                <p class="quote-author"><em>Ali manukhini</em></p>
+            </div>
+        </section>
+
+        <!--sekcja z formularzem-->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="contact-title">Napisz do mnie!</h2>
+                    <form class="contact-form" name="contactForm">
+                    <label class="label" for="name">Imię: </label>
+                    <input type="text" id="name" name="name" placeholder="Imię" required>
+                    <label class="label" for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="imie.nazwisko@mail.com" required> 
+                    <label class="label" for="message">Miejsce na Twoją wiadomość: </label>
+                    <textarea name="message" id="message" cols="30" rows="5"></textarea>
+
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label class="checkbox-label" for="newsletter">Zasubskrybuj mój newsletter!</label>
+
+                    <button type="submit" class="submit-button" id="form-submit" >Wyślij</button> 
+                    </form>
+            </div>
+        </section>
+
+        <!--footer stopka-->
+            <footer class="footer section-violet">
+                <div class="container">
+                    <div class="copy">
+                        <p>&copy; Marta Kacperska na STEAM Academy 2022</p>
+                        <p>Główne zdjęcie autorstwa <strong>XYZ z Pexels</strong></p>
+                        <br>
+                        <p> Zdjęcie profilowe autorstwa<strong>XYZ z pexels</strong></p>
+                    </div>
+                    <div class="social">
+                        <a href="https://youtube.com">Youtube</a>
+                        <a href="https://instagram.com">Instagram</a>
+                    </div>
+                </div>
+            </footer>
+
+    <script src="script.js"></script>
+    </body>
+</html>

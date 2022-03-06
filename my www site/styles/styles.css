@@ -1,0 +1,346 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 18px;
+  color: rgb(31, 29, 29);
+  font-family: "Catamaran", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hero-section .container {
+  max-width: 100%;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h2,
+h3 {
+  font-weight: 100;
+  margin: 0 0 20px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 70px;
+}
+
+h3 {
+  font-size: 30 px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+/*Header and menu */
+.header {
+  padding: 0px 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0px;
+}
+
+nav {
+  text-align: right;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin-right: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.menu a {
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+/* Hero section */
+.hero-section {
+  color: #f1f52f;
+  background: url("/zdjecia/sindre-strom.jpg") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 100vh; /*100 prc view port high*/
+}
+
+.hero-logo {
+  color: rgb(231, 171, 7);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 120px;
+  line-height: 1;
+  margin: 0px 0 40px;
+}
+
+.hero-lead {
+  font-size: 22px;
+  max-width: 45%;
+  margin-bottom: 0px;
+  padding-bottom: 200px;
+}
+
+.hero-button {
+  color: white;
+  border: 3px solid; /* not transparent*/
+  text-decoration: none;
+  padding: 8px 30px; /* 30 on sides */
+  font-size: 20px;
+}
+
+/* Columns */
+.columns-container {
+  display: flex; /*acces to functions of flex*/
+  justify-content: space-between;
+}
+
+.columns-2-container .columns {
+  width: 45%;
+}
+
+.columns-3-container {
+  flex-wrap: wrap;
+  row-gap: 25px;
+}
+
+.columns-3-container .column {
+  flex-basis: 32%;
+}
+
+.columns-4-container .column {
+  text-align: center;
+  flex-basis: 25%;
+}
+
+/* sections */
+.section {
+  padding: 50px;
+}
+
+.section-violet {
+  background-color: #f8c565;
+  color: white;
+}
+
+.section-pink {
+  background-color: hsl(0, 81%, 70%);
+  color: white;
+}
+
+.section-title {
+  color: hsl(0, 81%, 70%);
+}
+
+/* about section */
+.about-section {
+  padding: 50px 0;
+}
+
+.about-image {
+  text-align: center;
+  max-height: 550px;
+  position: relative;
+}
+
+.about-image img {
+  max-height: 550px;
+}
+
+.about-image::before {
+  content: "";
+  border: 20px solid rgb(241, 155, 42);
+  position: absolute;
+  top: -35px;
+  left: 20px;
+  width: 366px;
+  height: 550px;
+  z-index: -2;
+}
+
+.about-image::after {
+  content: "";
+  background-color: hsl(0, 81%, 70%);
+  position: absolute;
+  top: 35px;
+  right: 0px;
+  width: 366px;
+  height: 550px;
+  z-index: -1;
+}
+
+.interest-section {
+  /* SSS */
+  border: 2px solid #f8c565;
+  padding: 25px;
+  /* border-radius: 50%; */
+}
+
+.interest-name {
+  margin: 20px 0;
+}
+
+.interest-text {
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+/* photos section */
+.photos-title {
+  text-align: center;
+  color: hsl(0, 81%, 70%);
+}
+
+.photos-lead {
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.photos-section figure {
+  margin: 0;
+}
+
+.photos-section img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover; /* fits site */
+}
+
+.photos-section figcaption {
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/*quote section*/
+.quote-section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.quote-section::after {
+  content: "";
+  color: rgb(70, 85, 223);
+  position: absolute;
+  right: -90px;
+  bottom: -75px;
+  width: 350px;
+  height: 350px;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.quote-text {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.quote-author {
+  text-align: right;
+  font-size: 14px;
+}
+
+/*contact section*/
+.contact-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 3px solid rgb(95, 95, 228);
+  border-radius: 0;
+  padding: 8px 15px;
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  padding-bottom: 5px;
+}
+
+.submit-bottom {
+  color: white;
+  background-color: rgb(95, 95, 228);
+  border: 3px solid rgb(95, 95, 228);
+  text-decoration: none;
+  padding: 10px 40px;
+  margin: 30px auto 0;
+  display: block;
+  font-size: 20px;
+}
+
+/* footer
+ {
+  padding: 40px 0;
+}
+*/
+.copyright,
+.social {
+  width: 49%;
+  display: inline-block;
+}
+
+.social {
+  text-align: right;
+}
+
+.social a {
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.copyright {
+  font-size: 14px;
+}
